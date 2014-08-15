@@ -31,7 +31,7 @@ foreach ($books as $title => $properties) {
 		echo "\tYear of publication: " . $properties['published'] . "\n";
 		echo "\tName of author: " . $properties['author'] . "\n";
 		echo "--------------\n";
-}
+	}
 	// echo "$title\nNumber of pages: " . $properties['pages'] . "\nYear of publication: " . $properties['published'] . "\nName of author: " . $properties['author'] . "\n--------------\n";
 }
 
