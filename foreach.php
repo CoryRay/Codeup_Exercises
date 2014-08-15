@@ -33,5 +33,8 @@ $things = array('Sgt. Pepper', "11", null, array(1,2,3), 3.14, "12 + 7", false, 
 			echo "$value is a scalar\n";	
 	}
 
+foreach ($things as $key => $value) {
+	echo "$things $key is $value\n";
+}
 
 ?>

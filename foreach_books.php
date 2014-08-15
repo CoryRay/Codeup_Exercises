@@ -23,6 +23,16 @@ $books = array(
     )
 );
 
+foreach ($books as $title => $properties) {
 
+	if ($properties['published'] > 1950) {
+		echo "$title\n";
+		echo "\tNumber of pages: " . $properties['pages'] . "\n";
+		echo "\tYear of publication: " . $properties['published'] . "\n";
+		echo "\tName of author: " . $properties['author'] . "\n";
+		echo "--------------\n";
+}
+	// echo "$title\nNumber of pages: " . $properties['pages'] . "\nYear of publication: " . $properties['published'] . "\nName of author: " . $properties['author'] . "\n--------------\n";
+}
 
 ?>
