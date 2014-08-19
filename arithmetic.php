@@ -3,32 +3,64 @@
 $a = $argv[1];
 $b = $argv[2];
 
+function error_numeric() {
+	echo "Error! Arguments must be a numeric value!" . PHP_EOL;
+}
+
 function add($a, $b) {
-    echo $a + $b . PHP_EOL;
+    if (!is_numeric($a) || !is_numeric($b)) {
+		error_numeric();
+	} else {
+		return $a + $b . PHP_EOL;
+	}
 }
 
 function subtract($a, $b) {
-    echo $a - $b . PHP_EOL;
+    if (!is_numeric($a) || !is_numeric($b)) {
+		error_numeric();
+	} else {
+		return $a - $b . PHP_EOL;
+	}
 }
 
 function multiply($a, $b) {
-    echo $a * $b . PHP_EOL;
+    if (!is_numeric($a) || !is_numeric($b)) {
+		error_numeric();
+	} else {
+		return $a * $b . PHP_EOL;
+	}
 }
 
 function divide($a, $b) {
-    echo $a / $b . PHP_EOL;
+	if (!is_numeric($a) || !is_numeric($b)) {
+		error_numeric();
+	}
+    elseif ($b == 0) {
+    	return FALSE;
+	}
+    else {
+    	return $a / $b . PHP_EOL;
+	}
 }
 
 function modulus($a, $b) {
-	echo $a % $b . PHP_EOL;
+	if (!is_numeric($a) || !is_numeric($b)) {
+		error_numeric();
+	}
+    elseif ($b == 0) {
+    	return FALSE;
+	}
+    else {
+    	return $a % $b . PHP_EOL;
+	}
 }
 
-add($a, $b);
+echo add($a, $b);
 
-subtract($a, $b);
+echo subtract($a, $b);
 
-multiply($a, $b);
+echo multiply($a, $b);
 
-divide($a, $b);
+echo divide($a, $b);
 
-modulus($a, $b);
+echo modulus($a, $b);
