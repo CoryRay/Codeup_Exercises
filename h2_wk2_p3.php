@@ -53,10 +53,11 @@ function list_cars($car_array) {
 	}
 }
 
-function add_car($car_array) {
+function add_car($car_array, $model, $year, $doors, $color, $mileage, $sunroof, $convertable, $license) {
 	// Should add a car to the array
 	
 }
+
 
 list_cars($cars);
 
