@@ -31,7 +31,7 @@ switch($day_of_week) {
 		break;
 };
 
-if($day_of_week == 1) {
+/*if($day_of_week == 1) {
 		echo ucfirst('Monday') . PHP_EOL;
 	}
 	elseif ($day_of_week == 2) {
@@ -52,3 +52,4 @@ if($day_of_week == 1) {
 	elseif ($day_of_week == 7) {
 		echo ucfirst('sunday') . PHP_EOL;
 	}
+*/

@@ -2,7 +2,7 @@
 
 $number = 2;
 
- do{
+do{
 	echo "$number\n";
 	$number*=$number;
 } while ($number <= 1000000);
