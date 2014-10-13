@@ -16,7 +16,8 @@ echo "Some of the most famous fictional theoretical physicists are {$famous_fake
 */
 
 // Converts array into list n1, n2, ..., and n3
- function humanized_list($string) {
+ function humanized_list($string)
+ {
    $array = explode(', ', $string);
 
 	$tony = array_pop($array);

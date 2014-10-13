@@ -9,7 +9,7 @@ $cars = array(
         'sunroof' => true,
         'convertable' =>false,
         'license' => 'JSRULZ',
-    ),
+        ),
 
     'Honda Odyssey' => array(
         'year' => 2004, 
@@ -19,7 +19,7 @@ $cars = array(
         'sunroof' => false,
         'convertable' => false,
         'license' => 'ILUVPHP',
-    ),
+        ),
 
     'Cadillac Escalade' => array(
         'year' => 2014,
@@ -29,11 +29,12 @@ $cars = array(
         'sunroof' => false,
         'convertable' => false,
         'license' => 'HTML5',
-    ),
+        ),
 
-);
+    );
 
-function list_cars($car_array) {
+function list_cars($car_array)
+{
 	foreach ($car_array as $model => $car_details) {
 		echo "I own a $car_details[year] $model. Details below:" . PHP_EOL;
 		echo "------------------------------------------------" . PHP_EOL;
@@ -43,19 +44,19 @@ function list_cars($car_array) {
 			echo "Sunroof: Yes" . PHP_EOL;
 		} else {
 			echo "Sunroof:N/A" . PHP_EOL;
-		  }
-		if ($car_details['convertable']) {
-			echo "Convertable: Yes" . PHP_EOL;
-		} else {
-			echo "Convertable: N/A" . PHP_EOL;
-		  }
-		echo "License: $car_details[license]" . PHP_EOL . PHP_EOL;
-	}
+        }
+        if ($car_details['convertable']) {
+         echo "Convertable: Yes" . PHP_EOL;
+     } else {
+         echo "Convertable: N/A" . PHP_EOL;
+     }
+     echo "License: $car_details[license]" . PHP_EOL . PHP_EOL;
+ }
 }
 
-function add_car($car_array, $model, $year, $doors, $color, $mileage, $sunroof, $convertable, $license) {
+function add_car($car_array, $model, $year, $doors, $color, $mileage, $sunroof, $convertable, $license)
+{
 	// Should add a car to the array
-	
 }
 
 

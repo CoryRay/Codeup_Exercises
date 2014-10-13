@@ -8,7 +8,8 @@ $array = array(1,2,3);
 // TEST: If var $nothing is set, display '$nothing is SET'
 // TEST: If var $nothing is empty, display '$nothing is EMPTY'
 // TEST: If var $something is set, display '$something is SET'
-function set_or_empty($a) {
+function set_or_empty($a)
+{
 	if (isset($a)) {
 		echo "Variable is set" . PHP_EOL;
 	} else {
@@ -20,7 +21,8 @@ function set_or_empty($a) {
 // Serialize the array $array, and output the results
 // Unserialize the array $array, and output the results
 
-function serial($b) {
+function serial($b)
+{
 	var_dump($b) . PHP_EOL;
 	serialize($b);
 	var_dump($b) . PHP_EOL;

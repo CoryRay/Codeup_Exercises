@@ -3,11 +3,13 @@
 $a = $argv[1];
 $b = $argv[2];
 
-function error_numeric() {
+function error_numeric()
+{
 	echo "Error! Arguments must be a numeric value!" . PHP_EOL;
 }
 
-function add($a, $b) {
+function add($a, $b)
+{
     if (!is_numeric($a) || !is_numeric($b)) {
 		error_numeric();
 	} else {
@@ -15,7 +17,8 @@ function add($a, $b) {
 	}
 }
 
-function subtract($a, $b) {
+function subtract($a, $b)
+{
     if (!is_numeric($a) || !is_numeric($b)) {
 		error_numeric();
 	} else {
@@ -23,7 +26,8 @@ function subtract($a, $b) {
 	}
 }
 
-function multiply($a, $b) {
+function multiply($a, $b)
+{
     if (!is_numeric($a) || !is_numeric($b)) {
 		error_numeric();
 	} else {
@@ -31,7 +35,8 @@ function multiply($a, $b) {
 	}
 }
 
-function divide($a, $b) {
+function divide($a, $b)
+{
 	if (!is_numeric($a) || !is_numeric($b)) {
 		error_numeric();
 	} elseif ($b == 0) {
@@ -41,7 +46,8 @@ function divide($a, $b) {
 	}
 }
 
-function modulus($a, $b) {
+function modulus($a, $b)
+{
 	if (!is_numeric($a) || !is_numeric($b)) {
 		error_numeric();
 	} elseif ($b == 0) {

@@ -41,14 +41,14 @@ $quiz = [
 
 $counter= 1;
 
-	foreach($quiz as $question) {
-		echo "$counter. $question[question]" . PHP_EOL;
-		echo "\t a. $question[answer_1]" . PHP_EOL;
-		echo "\t b. $question[answer_2]" . PHP_EOL;
-		echo "\t c. $question[answer_3]" . PHP_EOL;
-		echo "\t*d. $question[correct_answer]" . PHP_EOL;
-		$counter++;
-	}
+foreach($quiz as $question) {
+	echo "$counter. $question[question]" . PHP_EOL;
+	echo "\t a. $question[answer_1]" . PHP_EOL;
+	echo "\t b. $question[answer_2]" . PHP_EOL;
+	echo "\t c. $question[answer_3]" . PHP_EOL;
+	echo "\t*d. $question[correct_answer]" . PHP_EOL;
+	$counter++;
+}
 // tips to make beter in the future:
 // use an "if else" statement to make the correct answer more dyanmic
 

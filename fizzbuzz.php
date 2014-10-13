@@ -5,23 +5,19 @@
 // mulitples of three and five print "fizzbuzz"
 
 
-for ($number = 0; $number <= 100; $number++) {
-	if ($number % 5 == 0 && $number % 3 == 0) {
-	echo "fizzbuzz\n";
+for ($i = 0; $i <= 100; $i++) {
+    if ($i % 5 == 0 && $i % 3 == 0) {
+        echo "fizzbuzz" . PHP_EOL;
+    }
+    elseif ($i % 5 == 0) {
+        echo "buzz" . PHP_EOL;
+    }
+    elseif ($i % 3 == 0) {
+        echo "fizz" . PHP_EOL;
+    }
+    else {
+        echo $i . PHP_EOL;
+    }
 }
-	elseif ($number % 5 == 0) {
-		echo "buzz\n";
-	}
-	elseif ($number % 3 == 0) {
-		echo "fizz\n";
-	}
-	else {
-		echo "$number\n";
-	}
-}
-
-
-
-
 
 ?>
