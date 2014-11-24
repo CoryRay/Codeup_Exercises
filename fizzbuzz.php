@@ -6,16 +6,17 @@
 
 
 for ($i = 0; $i <= 100; $i++) {
+
     if ($i % 5 == 0 && $i % 3 == 0) {
         echo "fizzbuzz" . PHP_EOL;
-    }
-    elseif ($i % 5 == 0) {
+
+    } elseif ($i % 5 == 0) {
         echo "buzz" . PHP_EOL;
-    }
-    elseif ($i % 3 == 0) {
+
+    } elseif ($i % 3 == 0) {
         echo "fizz" . PHP_EOL;
-    }
-    else {
+
+    } else {
         echo $i . PHP_EOL;
     }
 }

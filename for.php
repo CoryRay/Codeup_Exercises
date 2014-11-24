@@ -13,6 +13,13 @@ if (!$increment) {
     $increment = 1;
 }
 
+if (!is_numeric($start) || !is_numeric($end) || !is_numeric($increment)) {
+    echo "You didn't follow directions!" . PHP_EOL;
+    sleep(1);
+    echo "BYE";
+    exit(0);
+}
+
 for ($i=$start; $i < $end; $i+= $increment) {
     echo $i . PHP_EOL;
 }
