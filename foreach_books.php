@@ -3,36 +3,36 @@
 $books = array(
     'The Hobbit' => array(
         'published' => 1937,
-        'author' => 'J. R. R. Tolkien',
-        'pages' => 310
+        'author'    => 'J. R. R. Tolkien',
+        'pages'     => 310
     ),
     'Game of Thrones' => array(
         'published' => 1996,
-        'author' => 'George R. R. Martin',
-        'pages' => 835
+        'author'    => 'George R. R. Martin',
+        'pages'     => 835
     ),
     'The Catcher in the Rye' => array(
         'published' => 1951,
-        'author' => 'J. D. Salinger',
-        'pages' => 220
+        'author'    => 'J. D. Salinger',
+        'pages'     => 220
     ),
     'A Tale of Two Cities' => array(
         'published' => 1859,
-        'author' => 'Charles Dickens',
-        'pages' => 544
+        'author'    => 'Charles Dickens',
+        'pages'     => 544
     )
 );
 
 foreach ($books as $title => $properties) {
 
-	if ($properties['published'] > 1950) {
-		echo "$title\n";
-		echo "\tNumber of pages: " . $properties['pages'] . "\n";
-		echo "\tYear of publication: " . $properties['published'] . "\n";
-		echo "\tName of author: " . $properties['author'] . "\n";
-		echo "--------------\n";
-	}
-	// echo "$title\nNumber of pages: " . $properties['pages'] . "\nYear of publication: " . $properties['published'] . "\nName of author: " . $properties['author'] . "\n--------------\n";
+    // if ($properties['published'] > 1950) {
+    //     echo $title . PHP_EOL;
+    //     echo "\tNumber of pages: " . $properties['pages'] . PHP_EOL;
+    //     echo "\tYear of publication: " . $properties['published'] . PHP_EOL;
+    //     echo "\tName of author: " . $properties['author'] . PHP_EOL;
+    //     echo "--------------"   . PHP_EOL;
+    // }
+    echo "$title\nNumber of pages: " . $properties['pages'] . "\nYear of publication: " . $properties['published'] . "\nName of author: " . $properties['author'] . "\n--------------\n";
 }
 
 ?>
