@@ -11,12 +11,12 @@ function value_found ($a, $b)
 
 function comparison($array1, $array2)
 {
-    foreach ($array1 as $) {
+    foreach ($array1 as $detail1) {
         # code...
     }
 }
 
-$results = value_found("Dana", $names);
+echo value_found("Dana", $names);
 
 $compare_results = comparison($names, $compare);
 
